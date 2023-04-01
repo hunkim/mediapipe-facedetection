@@ -1,5 +1,18 @@
 from setuptools import setup, find_packages
 
+class BazelExtension(setuptools.Extension):
+  """A C/C++ extension that is defined as a Bazel BUILD target."""
+
+  def __init__(self, bazel_target, target_name=''):
+    self.bazel_target = bazel_target
+    self.relpath, self.target_name = (
+        posixpath.relpath(bazel_target, '//').split(':'))
+    if target_name:
+      self.target_name = target_name
+    ext_name = os.path.join(
+        self.relpath.replace(posixpath.sep, os.path.sep), self.target_name)
+    setuptools.Extension.__init__(self, ext_name, sources=[])
+    
 setup(
     name='mediapipe',
     version="0.0.1",
