@@ -1,4 +1,17 @@
 from setuptools import setup, find_packages
+import glob
+import os
+import platform
+import posixpath
+import re
+import shutil
+import subprocess
+import sys
+
+import setuptools
+from setuptools.command import build_ext
+from setuptools.command import build_py
+from setuptools.command import install
 
 class BazelExtension(setuptools.Extension):
   """A C/C++ extension that is defined as a Bazel BUILD target."""
