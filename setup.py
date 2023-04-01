@@ -10,15 +10,6 @@ setup(
     long_description_content_type='text/markdown',
     packages=setuptools.find_packages(
         exclude=['mediapipe.examples.desktop.*', 'mediapipe.model_maker.*']),
-    cmdclass={
-        'build_py': BuildPy,
-        'build_modules': BuildModules,
-        'build_ext': BuildExtension,
-        'generate_metadata_schema': GenerateMetadataSchema,
-        'gen_protos': GeneratePyProtos,
-        'install': Install,
-        'restore': Restore,
-    },
     ext_modules=[
         BazelExtension('//mediapipe/python:_framework_bindings'),
         BazelExtension(
