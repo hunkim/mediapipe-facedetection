@@ -465,9 +465,9 @@ setuptools.setup(
     cmdclass={
         'build_py': BuildPy,
         'build_modules': BuildModules,
-        'build_ext': BuildExtension,
-        'generate_metadata_schema': GenerateMetadataSchema,
-        'gen_protos': GeneratePyProtos,
+#        'build_ext': BuildExtension,
+#        'generate_metadata_schema': GenerateMetadataSchema,
+#        'gen_protos': GeneratePyProtos,
         'install': Install,
         'restore': Restore,
     },
