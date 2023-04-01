@@ -6,7 +6,6 @@ setup(
     url="https://github.com/hunkim/streamlit-google-oauth",
     author="Sung Kim",
     author_email="hunkim@gmail.com",
-    py_modules=["mediapipe"],
     packages=["mediapipe"],
     install_requires=[
        "numpy",
