@@ -6,7 +6,7 @@ setup(
     author="Sung Kim",
     author_email="hunkim@gmail.com",
     packages=find_packages(),
-    include_package_data=True,
+    package_data={'mediapipe': ['*']},
     install_requires=[
         "numpy",
     ]
