@@ -1,0 +1,9 @@
+.venv
+linegptup-firebase-adminsdk.json
+.env
+*.zip
+.venv.dev/
+__pycache__/
+*.pyc
+.env.app
+*.png
