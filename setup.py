@@ -1,7 +1,5 @@
 from setuptools import setup, find_packages
 
-from setuptools import setup, find_packages
-
 setup(
     name="mediapipe",
     version="0.0.1",
