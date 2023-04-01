@@ -7,7 +7,6 @@ setup(
     description='MediaPipe is the simplest way for researchers and developers to build world-class ML solutions and applications for mobile, edge, cloud and the web.',
     author='The MediaPipe Authors',
     author_email='mediapipe@google.com',
-    long_description=_get_long_description(),
     long_description_content_type='text/markdown',
     packages=setuptools.find_packages(
         exclude=['mediapipe.examples.desktop.*', 'mediapipe.model_maker.*']),
