@@ -10,7 +10,6 @@ setup(
     long_description_content_type='text/markdown',
     packages=setuptools.find_packages(
         exclude=['mediapipe.examples.desktop.*', 'mediapipe.model_maker.*']),
-    install_requires=_parse_requirements('requirements.txt'),
     cmdclass={
         'build_py': BuildPy,
         'build_modules': BuildModules,
