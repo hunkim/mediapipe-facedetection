@@ -1,5 +1,4 @@
 from setuptools import setup
-
 setup(
     name="mediapipe",
     version="0.1",
@@ -7,7 +6,8 @@ setup(
     author="Sung Kim",
     author_email="hunkim@gmail.com",
     packages=["mediapipe"],
+    package_data={"mediapipe": ["*"]},
     install_requires=[
-       "numpy",
+        "numpy",
     ]
 )
